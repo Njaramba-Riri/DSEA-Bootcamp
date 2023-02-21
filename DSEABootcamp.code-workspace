@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "DSEA-Bootcamp",
+			"path": "DSEA-Bootcamp"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "DSEABootcamp"
+	}
+}
