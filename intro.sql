@@ -52,16 +52,16 @@ SET name='Maureen Wanjiru'
 WHERE reg_no='SBMS/0834/2022';
 
 /*Creating a copy of the table*/
-CREATE TABLE students2
-AS SELECT* FROM students;
+/*CREATE TABLE students2
+AS (SELECT* FROM students);
 
-CREATE TABLE students 
-AS SELECT * FROM students;
+CREATE  TABLE students 
+AS (SELECT * FROM students);
 
 /*Creating a table using a subsubquery*/
 CREATE TABLE students4
-AS SELECT names,Reg_no,course, grad_date
-WHERE school='Mathematics';
+AS (SELECT names,Reg_no,course, grad_date
+WHERE school='Mathematics');
 
 /*Working with Dates*/
 SELECT names, Reg_no FROM students
@@ -181,8 +181,7 @@ CREATE TABLE Sales_Person (
     Sales_Person_Location varchar(255),
     Sale_Id int NOT NULL,
     PRIMARY KEY (Sales_Person_Id),
-    CONSTRAINT fk_Sales_Sales_Person FOREIGN KEY (Sale_Id)
-    REFERENCES Persons Sales(Sale_Id)
+    CONSTRAINT fk_Sales_Sales_Person FOREIGN KEY (Sale_Id) REFERENCES Sales (Sale_Id)
 );
 
 /*Adding or dropping a foreign key constraint*/
@@ -195,6 +194,5 @@ FOREIGN KEY(Sale_id) REFERENCES Sales(Sale_Id);
 
 /*Dropping*/
 ALTER TABLE Sales_Person
-DROP FOREIGN KEY fk_Sales_Sales_Person;
-
+DROP CONSTRAINT fk_Sales_Sales_Person;
 
