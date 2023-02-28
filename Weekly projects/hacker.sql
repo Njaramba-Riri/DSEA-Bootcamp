@@ -1,9 +1,6 @@
 SELECT name FROM Hackers ha
 INNER JOIN Submissions su ON ha.hacker_id=su.hacker_id
-SELECT name FROM ha Hackers
-WHERE ;
-
-
+SELECT name FROM ha Hackers;
 
 SELECT submission_date, COUNT(DISTINCT hacker_id) AS unique_hackers,
     MIN(hacker_id) AS hacker_id, hacker_name
