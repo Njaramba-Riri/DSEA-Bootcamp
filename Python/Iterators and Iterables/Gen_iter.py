@@ -44,3 +44,16 @@ print(li)
 
 print(list(fibonacci_generator(20)))
 
+# when the loop finishes, the generator iterator automatically raises a StopIteration exception
+def fibonacci_generator(stop=10):
+    current_fib, next_fib = 0, 1
+    index = 0
+    while True:
+        if index == stop:
+            return
+        index += 1
+        fib_number = current_fib
+        current_fib, next_fib = next_fib, current_fib + next_fib
+        yield fib_number
+        
+print(fibonacci_generator(9))
