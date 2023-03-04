@@ -14,3 +14,8 @@ from fib_iter import FibonacciIterator
 
 for fib_num in FibonacciIterator():
     print(fib_num)
+
+#from inf_iter import FibonnaciIterator
+
+#for fib_no in FibonnaciIterator():
+#    print(fib_no)

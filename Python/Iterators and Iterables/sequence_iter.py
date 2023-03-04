@@ -1,13 +1,13 @@
 #Iterators in python
+#inheriting form collections.abc
 
-class SequenceIterator:
+
+from _collections_abc import Iterator
+
+class SequenceIterator(Iterator):
     def __init__(self, sequence):
         self._sequence=sequence
         self._index=0
-
-
-    def __iter__(self):
-        return self
 
     def __next__(self):
         if self._index< len(self._sequence):
