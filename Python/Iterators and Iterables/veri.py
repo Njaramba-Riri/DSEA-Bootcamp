@@ -8,3 +8,9 @@ from square_iter import SquareIterator
 
 for square in SquareIterator([1,2,3,6,8,9,50]):
     print (square)
+
+
+from fib_iter import FibonacciIterator
+
+for fib_num in FibonacciIterator():
+    print(fib_num)
