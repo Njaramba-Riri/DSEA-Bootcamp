@@ -1,11 +1,3 @@
-CREATE TABLE customers(
-    customer_id int NOT NULL PRIMARY KEY,
-    name varchar2(30),
-    gender varchar2(10),
-    email varchar2(30),
-    mobile number(12),
-);
-
 insert into customers (customer_id, name, gender, email, mobile) values (1, 'Tarrance Chastenet', 'Male', 'tchastenet0@washingtonpost.com', '486-928-8389');
 insert into customers (customer_id, name, gender, email, mobile) values (2, 'Norrie Bauser', 'Male', 'nbauser1@patch.com', '617-319-2153');
 insert into customers (customer_id, name, gender, email, mobile) values (3, 'Arden Bister', 'Female', 'abister2@dailymotion.com', '331-972-3630');
@@ -1006,10 +998,3 @@ insert into customers (customer_id, name, gender, email, mobile) values (997, 'T
 insert into customers (customer_id, name, gender, email, mobile) values (998, 'Modestine Bugbird', 'Female', 'mbugbirdrp@toplist.cz', '397-952-0920');
 insert into customers (customer_id, name, gender, email, mobile) values (999, 'Vassily Altofts', 'Male', 'valtoftsrq@flavors.me', '558-761-1671');
 insert into customers (customer_id, name, gender, email, mobile) values (1000, 'Hillyer Sheather', 'Male', 'hsheatherrr@unblog.fr', '161-586-5627');
-
-
-CREATE TABLE orders(
-    customer_id int NOT NULL PRIMARY KEY,
-    order_id int NOT NULL CONSTRAINT ord_fk REFERENCES customers(customer_id)
-    order VARCHAR(30)
-);
