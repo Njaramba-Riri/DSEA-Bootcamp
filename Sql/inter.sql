@@ -3,7 +3,7 @@ CREATE TABLE customers(
     name varchar2(30),
     gender varchar2(10),
     email varchar2(30),
-    mobile number(12),
+    mobile number(12)
 );
 
 insert into customers (customer_id, name, gender, email, mobile) values (1, 'Tarrance Chastenet', 'Male', 'tchastenet0@washingtonpost.com', '486-928-8389');
