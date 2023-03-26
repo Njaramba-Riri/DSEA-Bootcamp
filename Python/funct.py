@@ -1,3 +1,4 @@
+from nltk import word_tokenizesample_tokens = word_tokenize(sample_string)sample_tokens[:5]
 def hello_world(h):
   def world(w):
         print(h, w)
@@ -30,3 +31,4 @@ def native_sum(list):
 
 
 sum(list)#replaces the above code
+
